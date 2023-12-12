@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //@SpringBootTest
-@SpringBootApplication
+//@SpringBootApplication
 class TransportationOrderServerApplicationTests {
 
 	@Test
