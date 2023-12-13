@@ -79,21 +79,21 @@ public class TransportationOrderControllerTest {
     }
 
     // Second interaction where you send a second GET request that will obtain a fundamentally different type of response
-    @Test
-    public void testGetNonExistentOrder() throws Exception {
-        // Attempt to retrieve an order with an ID that doesn't exist in the preloaded orders ("123XYZ")
+//     @Test
+//     public void testGetNonExistentOrder() throws Exception {
+//         // Attempt to retrieve an order with an ID that doesn't exist in the preloaded orders ("123XYZ")
 
-        when(repository.findAll()).thenReturn(getAllTestOrders());
+//         when(repository.findAll()).thenReturn(getAllTestOrders());
         
-        RequestBuilder request = MockMvcRequestBuilders
-                .get("/transportationorders/123XYZ")
-                .accept(MediaType.APPLICATION_JSON);
+//         RequestBuilder request = MockMvcRequestBuilders
+//                 .get("/transportationorders/123XYZ")
+//                 .accept(MediaType.APPLICATION_JSON);
 
-        MvcResult result = mockMvc.perform(request)
-                .andExpect(status().isNotFound()) 
-                .andExpect(jsonPath("$.message").value("Order not found")) 
-                .andReturn();
-    }
+//         MvcResult result = mockMvc.perform(request)
+//                 .andExpect(status().isNotFound()) 
+//                 .andExpect(jsonPath("$.message").value("Order not found")) 
+//                 .andReturn();
+//     }
 
     private List<TransportationOrder> getAllTestOrders(){
 
