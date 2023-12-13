@@ -51,7 +51,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/JavierGarcia22/ts:latest
+          tags: ghcr.io/javiergarcia22/ts:latest
   deploy:
     needs: verify-and-package
     runs-on: ubuntu-latest
